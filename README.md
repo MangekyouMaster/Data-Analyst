@@ -1,2 +1,5 @@
-# DataScience
-Python_Project_for_DataScience
+                                                                       IBM Data Analyst Professional Certificate
+<img width="1080" height="1080" alt="python-project-for-data-science" src="https://github.com/user-attachments/assets/6c69adb1-09b8-4578-90e0-6aee991084fc" />
+
+<img width="794" height="612" alt="image" src="https://github.com/user-attachments/assets/6f270c17-5214-47f4-8260-cf84ce6d5a58" />
+
