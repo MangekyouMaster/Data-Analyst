@@ -1,0 +1,87 @@
+
+🐍 Importing and Exporting Data in Python with Pandas
+
+If you’ve ever dived into data analysis or machine learning, you know that getting your data into Python is half the battle. Once it’s there, you can clean, explore, and visualize it — but first, you need to import it correctly.
+
+In this guide, we’ll walk through how to read and write data using Pandas, one of Python’s most popular data-handling libraries.
+
+💡 Step 1: Understanding Data Acquisition
+
+Before we start coding, let’s talk about what data acquisition means.
+It’s simply the process of loading data from different sources — like files, databases, or online URLs — into your Python environment.
+
+When using Pandas, two things matter most when reading data:
+
+Format → how the data is stored or encoded (CSV, JSON, Excel, etc.)
+File path → where the data lives (on your computer or online)
+📁 Step 2: File Formats and Paths
+
+The format tells Pandas what type of file it’s dealing with.
+You can usually guess this from the file extension:
+
+Press enter or click to view image in full size
+
+The path tells Pandas where to find the file — either a local file path like <file_path>.csv or a web URL.
+
+🚗 Step 3: Reading a Dataset Example
+
+In our example, we’ll use a dataset of Laptops pricing retrieved from a web address.
+
+At first glance, the raw data might look like a jumble of numbers and text. However, once we import it into Pandas, we can begin to interpret and analyze it effectively. Pandas provides the convenient read_csv() function to read CSV files into a DataFrame, which is a tabular data structure similar to a spreadsheet.
+
+file_path = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DA0101EN-Coursera/laptop_pricing_dataset_base.csv"
+import pandas as pd
+
+file_path = 'https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DA0101EN-Coursera/laptop_pricing_dataset_base.csv.csv'
+df = pd.read_csv(file_path, header=None)
+Boom 💥 — you’ve just imported your first dataset!
+
+By default, read_csv() assumes your file has column headers.
+But sometimes it doesn’t — in that case, you can tell Pandas not to assign any by setting header=None
+
+When you do this, Pandas automatically gives columns integer names (0, 1, 2, etc.). That works, but it’s not very readable — let’s fix that next.
+
+Press enter or click to view image in full size
+
+🏷️ Step 4: Adding Column Names
+
+If you already have a list of column names, you can easily assign them:
+
+# create headers list
+headers = ["Manufacturer", "Category", "Screen", "GPU", "OS", "CPU_core", "Screen_Size_inch", "CPU_frequency", "RAM_GB", "Storage_GB_SSD", "Weight_kg", "Price"]
+df.columns = headers
+print(df.head(10))
+Now when you check your data again, You’ll see descriptive column names at the top — much easier to work with!
+
+Press enter or click to view image in full size
+
+🔍 Step 6: Previewing the Data
+
+It’s always smart to take a quick look at your dataset after loading it.
+Instead of printing the entire thing, use:
+
+df.head()   # Shows the first 5 rows
+df.tail()   # Shows the last 5 rows
+💾 Step 7: Exporting Data from Pandas
+
+After cleaning and transforming your dataset, you’ll probably want to save your results. Exporting data in Pandas is just as simple as importing it.
+
+To save a DataFrame to a CSV file:
+
+df.to_csv('automobile.csv', index=False)
+The index=False part just means you don’t want Pandas to include row indices in your saved file.
+
+🌍 Bonus Tip: Other File Formats
+
+While we focused on CSV files here, Pandas supports many formats.
+Here’s how similar the syntax looks:
+
+df.to_excel('output.xlsx', index=False)   # Excel
+df.to_json('output.json')                # JSON
+df.to_hdf('output.h5', key='df')         # HDF5
+So next time you come across a messy CSV or Excel file, you’ll know exactly what to do. Happy coding! 🐍✨
+
+
+
+
+
