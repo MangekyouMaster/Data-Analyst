@@ -12,8 +12,8 @@ The portfolio is structured into separate folders for each major project. Click 
 
 | Project Category | Project Title | Technologies Used |
 | :--- | :--- | :--- |
-| **Data Visualization** | **[Create Visualizations using Matplotlib, Seaborn & Folium](https://github.com/MangekyouMaster/Data-Analyst/tree/main/Create%20Visualizations%20using%20Matplotlib%2C%20Seaborn%20%26%20Folium)** | Python, Pandas, Matplotlib, Seaborn |
-
+| **Data Visualization** | **[Create Visualizations using Matplotlib, Seaborn & Folium](https://github.com/MangekyouMaster/Data-Analyst/tree/main/Create%20Visualizations%20using%20Matplotlib%2C%20Seaborn%20%26%20Folium)** | Python, Pandas, Matplotlib, Seaborn, Folium |
+| **Dashboarding** | **[Automobile Sales Statistics Dashboard](https://github.com/MangekyouMaster/Data-Analyst/tree/main/Create%20Dashboard%20with%20Plotly%20and%20Dash)** | Python, Pandas, **Dash**, **Plotly** |
 -----
 
 ## 🛠️ Technologies & Skills Demonstrated
