@@ -91,3 +91,7 @@ pip install setuptools packaging pandas dash more-itertools
     ```
 
 3.  The terminal will display the local URL (e.g., `http://127.0.0.1:8050/`). Open this link in your web browser to view and interact with the dashboard.
+
+### Running Dashboard :
+![alt text](image.png)
+![alt text](image-1.png)
