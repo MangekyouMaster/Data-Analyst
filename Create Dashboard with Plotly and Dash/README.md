@@ -6,9 +6,9 @@ This project is a dynamic, interactive dashboard built using **Dash** and **Plot
 
 ## 💡 Project Overview and Scenario
 
-[cite\_start]The objective of this dashboard is to analyze the historical trends in automobile sales to provide insights into how the sales of **XYZAutomotives** were affected during times of recession[cite: 28, 29]. [cite\_start]The analysis covers the years **1980 to 2013**[cite: 40].
+ The objective of this dashboard is to analyze the historical trends in automobile sales to provide insights into how the sales of **XYZAutomotives** were affected during times of recession[  28, 29].  The analysis covers the years **1980 to 2013**.
 
-[cite\_start]The dashboard is structured to display two primary reports, controlled by an interactive dropdown menu: **Yearly Automobile Sales Statistics** and **Recession Period Statistics**[cite: 37].
+ The dashboard is structured to display two primary reports, controlled by an interactive dropdown menu: **Yearly Automobile Sales Statistics** and **Recession Period Statistics**
 
 -----
 
@@ -18,12 +18,12 @@ The dashboard utilizes two main interactive components to allow users to explore
 
 1.  **Report Type Selection:** A dropdown allows the user to choose between the two main reports:
       * `Yearly Statistics`
-      * [cite\_start]`Recession Period Statistics` [cite: 79]
-2.  [cite\_start]**Year Selection:** A second dropdown is used to select a specific year[cite: 80].
-      * [cite\_start]This dropdown is **enabled** when `Yearly Statistics` is selected[cite: 89].
-      * [cite\_start]It is **disabled** when `Recession Period Statistics` is selected, as the recession report covers multiple years[cite: 90].
+      *  `Recession Period Statistics`
+2.   **Year Selection:** A second dropdown is used to select a specific year.
+      *  This dropdown is **enabled** when `Yearly Statistics` is selected.
+      *  It is **disabled** when `Recession Period Statistics` is selected, as the recession report covers multiple years.
 
-[cite\_start]Both reports display four distinct plots in a 2-row, 2-column layout[cite: 96].
+ Both reports display four distinct plots in a 2-row, 2-column layout.
 
 -----
 
@@ -35,34 +35,34 @@ The dashboard is capable of generating the following sets of four visualizations
 
 | Plot | Type | Description |
 | :--- | :--- | :--- |
-| **Yearly Automobile Sales** | Line Chart | [cite\_start]Average automobile sales for each year across the entire period (1980-2013)[cite: 44]. |
-| **Total Monthly Automobile Sales** | Line Chart | [cite\_start]Total monthly automobile sales for the **selected year**[cite: 45]. |
-| **Average Vehicles Sold** | Bar Chart | [cite\_start]Average number of vehicles sold for each vehicle type in the **selected year**[cite: 46]. |
-| **Total Advertisement Expenditure** | Pie Chart | [cite\_start]Total advertising expenditure share for each vehicle type in the **selected year**[cite: 47, 48]. |
+| **Yearly Automobile Sales** | Line Chart |  Average automobile sales for each year across the entire period (1980-2013). |
+| **Total Monthly Automobile Sales** | Line Chart |  Total monthly automobile sales for the **selected year**. |
+| **Average Vehicles Sold** | Bar Chart |  Average number of vehicles sold for each vehicle type in the **selected year**. |
+| **Total Advertisement Expenditure** | Pie Chart |  Total advertising expenditure share for each vehicle type in the **selected year**. |
 
 ### 2\. Recession Period Statistics (Filtered where `Recession = 1`)
 
 | Plot | Type | Description |
 | :--- | :--- | :--- |
-| **Sales Fluctuation** | Line Chart | [cite\_start]Average automobile sales for each year **during recession periods**[cite: 50]. |
-| **Vehicles Sold by Type** | Bar Chart | [cite\_start]Average number of vehicles sold for each vehicle type **during recession periods**[cite: 51]. |
-| **Total Expenditure Share** | Pie Chart | [cite\_start]Total advertising expenditure share by vehicle type **during recession periods**[cite: 52]. |
-| **Unemployment Effect on Sales** | Bar Chart | [cite\_start]Effect of unemployment rate on automobile sales by vehicle type **during recession periods**[cite: 53]. |
+| **Sales Fluctuation** | Line Chart |  Average automobile sales for each year **during recession periods**. |
+| **Vehicles Sold by Type** | Bar Chart |  Average number of vehicles sold for each vehicle type **during recession periods**. |
+| **Total Expenditure Share** | Pie Chart |  Total advertising expenditure share by vehicle type **during recession periods**. |
+| **Unemployment Effect on Sales** | Bar Chart |  Effect of unemployment rate on automobile sales by vehicle type **during recession periods**. |
 
 -----
 
 ## 💾 Dataset Variables
 
-[cite\_start]The analysis is based on a dataset that includes the following key variables[cite: 57]:
+ The analysis is based on a dataset that includes the following key variables:
 
 | Variable Name | Description |
 | :--- | :--- |
-| `Date` | [cite\_start]The date of the observation[cite: 59]. |
-| `Recession` | [cite\_start]A binary variable (1 = recession period, 0 = normal period)[cite: 60]. |
-| `Automobile Sales` | [cite\_start]The number of vehicles sold during the period[cite: 64]. |
-| `unemployment rate` | [cite\_start]The monthly unemployment rate[cite: 66]. |
-| `Advertising_Expenditure` | [cite\_start]The advertising expenditure of the company[cite: 71]. |
-| `Vehicle_Type` | [cite\_start]The type of vehicles sold (e.g., Supperminicar, Sports, Executivecar, etc.)[cite: 72]. |
+| `Date` |  The date of the observation. |
+| `Recession` |  A binary variable (1 = recession period, 0 = normal period). |
+| `Automobile Sales` |  The number of vehicles sold during the period. |
+| `unemployment rate` |  The monthly unemployment rate. |
+| `Advertising_Expenditure` |  The advertising expenditure of the company. |
+| `Vehicle_Type` |  The type of vehicles sold (e.g., Supperminicar, Sports, Executivecar, etc.). |
 
 -----
 
